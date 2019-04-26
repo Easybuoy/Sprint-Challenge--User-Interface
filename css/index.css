@@ -110,7 +110,6 @@ p {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .bottom-content {
@@ -146,26 +145,37 @@ footer nav a {
     text-decoration: none;
 }
 
-.navbar ul {
+nav ul {
     display: flex;
     margin: 50px;
     align-items: baseline;
     justify-content: flex-end;
 }
 
-.navbar ul li {
+nav ul li {
     margin: 0px 30px 0px 30px;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: top left;
 }
 
-.navbar ul li a {
+nav ul li:hover {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(2);
+}
+
+nav ul li a {
     text-decoration: none;
     color: black;
 }
 
-.navbar ul li a:hover {
+nav ul li a:hover {
     color: #4d4d00;
 }
 
+nav ul li  a.active {
+    color: #4d4d00;
+	font-weight: 900;
+}
 
 .middle-content .boxes .box-1 {
     background-color: teal;
@@ -208,7 +218,7 @@ footer nav a {
 }
 
 .header {
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px;
 }
 
 .about-page .top-content {
@@ -266,12 +276,15 @@ footer nav a {
     justify-content: center;
     margin-bottom: 5%;
     border: 2px solid black;
+    justify-content: center;
+    transition: all .2s ease-in-out;
 }
 
 .button:hover {
     background-color: black;
     color: white;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
  .button .button-text {
@@ -293,19 +306,13 @@ footer nav a {
     margin: 2% 0 2% 0;
     height: 50px;
     font-weight: 500;
-} 
+}
 
 .contact-us .middle-content .contact-us-form textarea{
     height: 100px;
     width: 70%;
-
 }
 
 .text-center {
     justify-content: center;
-}
-
-.active {
-    color: #4d4d00 !important;
-	font-weight: 900;
 }
