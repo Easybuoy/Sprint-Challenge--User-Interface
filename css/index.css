@@ -110,6 +110,7 @@ p {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .bottom-content {
@@ -217,8 +218,14 @@ nav ul li  a.active {
     background-color: dodgerblue;
 }
 
-.header {
+header {
     margin: 20px 0px;
+    max-width: 100%;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
 }
 
 .about-page .top-content {
@@ -264,7 +271,7 @@ nav ul li  a.active {
     text-align: justify;
 }
 
- .button {
+.button {
 	margin-top: 5%;
 	border: 1px solid black;
 	border-radius: 7px;
@@ -276,7 +283,6 @@ nav ul li  a.active {
     justify-content: center;
     margin-bottom: 5%;
     border: 2px solid black;
-    justify-content: center;
     transition: all .2s ease-in-out;
 }
 
