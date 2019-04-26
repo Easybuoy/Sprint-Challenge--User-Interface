@@ -209,3 +209,63 @@ footer nav a {
 .header {
     margin: 20px 0px 20px 0px;
 }
+
+.about-page .top-content {
+    justify-content: center;
+}
+.about-page .top-content .text-container {
+    width: 95%;
+}
+
+.about-page .middle-content {
+    border-bottom: none;
+}
+
+.about-page .middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-page .middle-content .boxes .box{
+    width: 45%;
+    height: auto;
+    background: white;
+    margin-bottom: 5%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px dashed black;
+
+}
+
+.about-page .middle-content .boxes .text-container {
+    width: auto;
+}
+
+.about-page .middle-content .boxes .text-container h2 {
+    margin-bottom: 10px;
+}
+
+.about-page .middle-content .boxes .text-container p {
+    text-align: justify;
+}
+
+.about-page .middle-content .boxes .text-container .button {
+	margin-top: 5%;
+	border: 1px solid black;
+	border-radius: 7px;
+	width: 45%;
+	height: 30%;
+	font-size: 20px;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    border: 2px solid black;
+}
+
+.about-page .middle-content .boxes .text-container .button .button-text {
+    margin: 2%;
+}
