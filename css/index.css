@@ -67,6 +67,7 @@ p {
 }
 
 .container {
+    max-width: 900px;
     width: 800px;
     margin: 0 auto;
 }
@@ -242,6 +243,7 @@ footer nav a {
 
 .about-page .middle-content .boxes .text-container {
     width: auto;
+    margin-top: 5%;
 }
 
 .about-page .middle-content .boxes .text-container h2 {
@@ -252,7 +254,7 @@ footer nav a {
     text-align: justify;
 }
 
-.about-page .middle-content .boxes .text-container .button {
+ .button {
 	margin-top: 5%;
 	border: 1px solid black;
 	border-radius: 7px;
@@ -266,6 +268,44 @@ footer nav a {
     border: 2px solid black;
 }
 
-.about-page .middle-content .boxes .text-container .button .button-text {
+.button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+ .button .button-text {
     margin: 2%;
+}
+
+.contact-us .middle-content .contact-us-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us .middle-content .contact-us-form h3 {
+    margin: 2%;
+}
+
+.contact-us .middle-content .contact-us-form input{
+    width: 70%;
+    margin: 2% 0 2% 0;
+    height: 50px;
+    font-weight: 500;
+} 
+
+.contact-us .middle-content .contact-us-form textarea{
+    height: 100px;
+    width: 70%;
+
+}
+
+.text-center {
+    justify-content: center;
+}
+
+.active {
+    color: #4d4d00 !important;
+	font-weight: 900;
 }
