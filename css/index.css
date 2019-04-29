@@ -67,6 +67,7 @@ p {
 }
 
 .container {
+    max-width: 900px;
     width: 800px;
     margin: 0 auto;
 }
@@ -143,4 +144,181 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    margin: 50px;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0px 30px 0px 30px;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: top left;
+}
+
+nav ul li:hover {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(2);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #4d4d00;
+}
+
+nav ul li  a.active {
+    color: #4d4d00;
+	font-weight: 900;
+}
+
+.middle-content .boxes .box-1 {
+    background-color: teal;
+}
+
+.middle-content .boxes .box-2 {
+    background-color: gold;
+}
+
+.middle-content .boxes .box-3 {
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .box-4 {
+    background-color: coral;
+}
+
+.middle-content .boxes .box-5 {
+    background-color: crimson;
+}
+
+.middle-content .boxes .box-6 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box-7 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box-8 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box-9 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box-10 {
+    background-color: dodgerblue;
+}
+
+header {
+    margin: 20px 0px;
+    max-width: 100%;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-page .top-content {
+    justify-content: center;
+}
+.about-page .top-content .text-container {
+    width: 95%;
+}
+
+.about-page .middle-content {
+    border-bottom: none;
+}
+
+.about-page .middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-page .middle-content .boxes .box{
+    width: 45%;
+    height: auto;
+    background: white;
+    margin-bottom: 5%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px dashed black;
+
+}
+
+.about-page .middle-content .boxes .text-container {
+    width: auto;
+    margin-top: 5%;
+}
+
+.about-page .middle-content .boxes .text-container h2 {
+    margin-bottom: 10px;
+}
+
+.about-page .middle-content .boxes .text-container p {
+    text-align: justify;
+}
+
+.button {
+	margin-top: 5%;
+	border: 1px solid black;
+	border-radius: 7px;
+	width: 45%;
+	height: 30%;
+	font-size: 20px;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    border: 2px solid black;
+    transition: all .2s ease-in-out;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+ .button .button-text {
+    margin: 2%;
+}
+
+.contact-us .middle-content .contact-us-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us .middle-content .contact-us-form h3 {
+    margin: 2%;
+}
+
+.contact-us .middle-content .contact-us-form input{
+    width: 70%;
+    margin: 2% 0 2% 0;
+    height: 50px;
+    font-weight: 500;
+}
+
+.contact-us .middle-content .contact-us-form textarea{
+    height: 100px;
+    width: 70%;
+}
+
+.text-center {
+    justify-content: center;
 }
